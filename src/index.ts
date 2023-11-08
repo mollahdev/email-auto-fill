@@ -1,3 +1,5 @@
-let a = 1;
+const a = 1;
 
 a = 'hello world'
+
+console.log(a);

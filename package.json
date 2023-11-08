@@ -33,7 +33,7 @@
         "format": "npx prettier --write .",
         "build": "tsc && vite build",
         "build:watch": "tsc && vite build --watch",
-        "dev": "vite",
+        "start": "vite",
         "test": "vitest --run --reporter verbose",
         "prepare": "husky install"
     },
