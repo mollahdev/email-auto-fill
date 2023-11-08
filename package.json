@@ -1,0 +1,58 @@
+{
+    "name": "@mollahdev/email-auto-fill",
+    "version": "0.0.1",
+    "author": "Ashraf Mollah <mollah.dev@gmail.com> (https://mollah.dev)",
+    "description": "A simple class to auto fill email address based on user input",
+    "keywords": [
+        "email-suggesation",
+        "auto-fill",
+        "email",
+        "email-autofill",
+        "ashraf",
+        "package"
+    ],
+    "email": "mollah.dev@gmail.com",
+    "main": "./dist/index.cjs",
+    "module": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "import": "./dist/index.js",
+            "require": "./dist/index.cjs"
+        }
+    },
+    "files": [
+        "dist"
+    ],
+    "bugs": {
+        "url": "https://github.com/mollahdev/email-auto-fill/issues"
+    },
+    "homepage": "https://github.com/mollahdev/email-auto-fill#readme",
+    "type": "module",
+    "scripts": {
+        "format": "npx prettier --write .",
+        "build": "tsc && vite build",
+        "build:watch": "tsc && vite build --watch",
+        "dev": "vite",
+        "test": "vitest --run --reporter verbose",
+        "prepare": "husky install"
+    },
+    "lint-staged": {
+        "*.ts": [
+            "npx prettier --write",
+            "npm run test"
+        ]
+    },
+    "devDependencies": {
+        "@rollup/plugin-typescript": "^11.1.1",
+        "@types/node": "^20.2.3",
+        "husky": "^8.0.3",
+        "lint-staged": "13.2.3",
+        "prettier": "2.8.8",
+        "rollup-plugin-typescript-paths": "^1.4.0",
+        "tslib": "^2.5.2",
+        "typescript": "^5.0.2",
+        "vite": "^4.3.2",
+        "vitest": "^0.33.0"
+    }
+}
